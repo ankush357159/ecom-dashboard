@@ -2,9 +2,17 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-light .navbar_wrapper a{
+  padding-left: 20px;
+  color: red;
+  text-decoration: none;
+
+  
+
+}
+
+.navbar-light .navbar-brand {
+  color: rgb(216, 20, 216);
 }
 
 @media (prefers-reduced-motion: no-preference) {

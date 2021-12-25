@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Button, Table } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { Header } from "./Header";
 
 const ProductList = () => {
@@ -70,6 +71,13 @@ const ProductList = () => {
                   >
                     Delete
                   </Button>
+                </td>
+                <td>
+                  <Link to={"update/"+item.id}>
+                    <Button className='btn btn-success cursor-pointer'>
+                      Update
+                    </Button>
+                  </Link>
                 </td>
               </tr>
             ))}

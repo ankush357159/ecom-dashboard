@@ -32,9 +32,9 @@ const ProductList = () => {
             <tr>
               <th>#</th>
               <th>Name</th>
-              <th>Image</th>
               <th>Description</th>
               <th>Price</th>
+              <th>Image</th>
             </tr>
           </thead>
           <tbody>
@@ -42,6 +42,8 @@ const ProductList = () => {
               <tr key={item.id}>
                 <td>{item.id}</td>
                 <td>{item.name}</td>
+                <td>{item.description}</td>
+                <td>Rs.{item.price}</td>
                 <td>
                   <img
                     style={{ width: 80 }}
@@ -49,8 +51,6 @@ const ProductList = () => {
                     alt=''
                   />
                 </td>
-                <td>{item.description}</td>
-                <td>Rs.{item.price}</td>
               </tr>
             ))}
           </tbody>

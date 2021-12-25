@@ -25,8 +25,9 @@ const Register = () => {
       body: JSON.stringify(item),
     });
     result = await result.json();
-    console.log("result:", result);
+    // console.log("result:", result);
     localStorage.setItem("user-info", JSON.stringify(result));
+    console.log(result)
     history.push("/add");
   };
 

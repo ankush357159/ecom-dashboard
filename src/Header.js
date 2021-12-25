@@ -17,6 +17,7 @@ export const Header = () => {
       <Nav className='me-auto navbar_wrapper'>
         {localStorage.getItem("user-info") ? (
           <>
+            <Link to="/">Product List</Link>
             <Link to='/add'> Add Product</Link>
             <Link to='/update'> Update - Product</Link>
           </>
@@ -29,7 +30,7 @@ export const Header = () => {
       </Nav>
       {localStorage.getItem("user-info") ? (
         <Nav>
-          <NavDropdown title={user && user.name}>
+          <NavDropdown  title={user && user.name}>
             <NavDropdown.Item onClick={logout}>Logout</NavDropdown.Item>
             <NavDropdown.Item>Profile</NavDropdown.Item>
           </NavDropdown>

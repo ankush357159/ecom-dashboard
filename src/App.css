@@ -6,9 +6,11 @@
   padding-left: 20px;
   color: red;
   text-decoration: none;
+}
 
-  
-
+.navbar-light .navbar-nav .nav-link{
+  color: red;
+  margin-right: 5px;
 }
 
 .navbar-light .navbar-brand {
